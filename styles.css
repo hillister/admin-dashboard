@@ -27,9 +27,9 @@
 
 .navBottom {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
     align-items: center;
-    gap: 30px;
+    gap: 40px
 }
 .sidebar {
     background-color: rgb(42, 59, 212);
@@ -70,9 +70,10 @@ input {
 }
 
 .profileLarge {
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
+    justify-self: end;
 }
 
 .name {
@@ -80,4 +81,22 @@ input {
     padding-right: 48px;
     justify-self: end;
 
+}
+
+button {
+    background-color: rgb(72, 72, 177);
+    border-radius: 30px;
+    font-size: 25px;
+    color: white;
+    height: 50px;
+    width: 180px
+}
+
+.welcome {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.nameLarge {
+    font-size: 40px;
 }
