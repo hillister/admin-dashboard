@@ -11,54 +11,73 @@
 }
 
 .header {
-    background-color: rgb(119, 88, 118);
     grid-column-start: 2;
     grid-column-end: 3;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    border-style: solid;
+    grid-template-rows: 1fr 2fr;
+
+
 }
 
 .navTop {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    border-style: solid;
+    align-items: center;
 }
 
 .navBottom {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    border-style: solid;
+    align-items: center;
+    gap: 30px;
 }
 .sidebar {
-    background-color: rgb(104, 104, 201);
+    background-color: rgb(42, 59, 212);
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
 .mainContent {
-    background-color: rgb(179, 216, 179);
+    background-color: rgb(7, 10, 36);
 }
 
 .search {
-    height: 40px;
+    height: 35px;
     width: auto;
+    justify-self: end;
+    padding-right: 20px;
 }
 
+input {
+    font-size: 30px;
+    border-style: none;
+    border-radius: 20px;
+    padding-right: 700px;
+    background-color: rgb(206, 206, 206);
+}
 .notify {
-    height: 40px;
+    height: 35px;
     width: auto;
+    justify-self: end; 
+    padding-left: 310px;
 }
 
 .profileSmall {
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
+    justify-self: center;
 }
 
 .profileLarge {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
 }
 
+.name {
+    font-size: 30px;
+    padding-right: 48px;
+    justify-self: end;
+
+}
