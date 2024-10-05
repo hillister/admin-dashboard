@@ -153,40 +153,79 @@ button {
 .mainContent {
     background-color: rgb(216, 218, 241);
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 5fr 1fr 5fr;
+
 }
 
 .announceHead {
     grid-row-start: 1;
     grid-column-start: 2;
     border-style: solid; 
+    justify-self: center;
+    align-self: center;
 }
 
 .announcementItems {
     grid-row-start: 2;
     grid-column-start: 2;
     border-style: solid; 
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    width: 350px;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.announce {
+    margin: 15px;
+}
+
+.projectHead {
+    border-style: solid; 
+    justify-self: start;
+    align-self: center;
 }
 
 .projectItems {
     grid-row: 2/5;
     grid-column-start: 1;
     border-style: solid; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-self: start;
+    gap: 30px;
 }
 
-.trendingItems {
-    grid-row-start: 4;
-    grid-column-start: 2;
+.project {
     border-style: solid; 
+    width: 350px;
+    height: 200px;
+    background-color: white;
 }
 
 .trendHead {
     grid-row-start: 3;
     grid-column-start: 2;
     border-style: solid; 
+    justify-self: center;
+    align-self: center;
 }
 
-.projectHead {
-    border-style: solid; 
+.trendingItems {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    border-style: solid;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    justify-self: center;
+    align-self: start;
+    width: 350px;
+    height: 250px;
+    background-color: white;
 }
+
+
