@@ -7,8 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 4fr; 
-    width: 100vw;
-    height: 100vh;
+
 }
 
 /* header */
@@ -153,34 +152,55 @@ button {
 .mainContent {
     background-color: rgb(216, 218, 241);
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 5fr 1fr 5fr;
-
 }
 
 .announceHead {
     grid-row-start: 1;
     grid-column-start: 2;
-    border-style: solid; 
-    justify-self: center;
+    justify-self: start;
     align-self: center;
+    font-size: 25px;
 }
 
 .announcementItems {
     grid-row-start: 2;
     grid-column-start: 2;
-    border-style: solid; 
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     background-color: white;
-    width: 350px;
-    height: auto;
-    justify-self: center;
+    justify-self: start;
     align-self: center;
+    padding: 25px;
+    border-radius: 15px;
+    width: 350px;
+    margin-right: 50px;
 }
 
-.announce {
-    margin: 15px;
+
+.aHead {
+    font-size: 18px;
+}
+
+.aHead2 {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.aText {
+    font-size: 15px;
+    color: rgb(92, 92, 92);
+    border-bottom: solid;
+    border-color: rgb(158, 158, 158);
+    border-radius: 2px;
+    padding-bottom: 15px;
+}
+
+.aText-last {
+    font-size: 15px;
+    color: rgb(92, 92, 92);
+    border-style: none;
 }
 
 .projectHead {
@@ -210,22 +230,31 @@ button {
 .trendHead {
     grid-row-start: 3;
     grid-column-start: 2;
-    border-style: solid; 
-    justify-self: center;
+    justify-self: start;
     align-self: center;
+    font-size: 25px;
 }
 
 .trendingItems {
     grid-row-start: 4;
     grid-column-start: 2;
-    border-style: solid;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr; 
-    justify-self: center;
+    grid-template-columns: 1fr 3fr;
+    justify-self: start;
     align-self: start;
-    width: 350px;
-    height: 250px;
+    padding: 25px;
+    border-radius: 15px;
     background-color: white;
+    row-gap: 25px;
+    column-gap: 10px;
+    width: 350px;
 }
 
+.trend p {
+    font-size: 15px;
+}
 
+.trend h5 {
+    font-size: 18px;
+}
