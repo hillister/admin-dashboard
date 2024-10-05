@@ -28,7 +28,7 @@
     display: grid;
     grid-template-columns: 1fr 8fr 1fr 1fr 1fr;
     align-items: center;
-    gap: 40px
+    gap: 40px;
 }
 
 .search {
@@ -153,15 +153,16 @@ button {
     background-color: rgb(216, 218, 241);
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 5fr 1fr 5fr;
+    grid-template-rows: 60px 5fr 60px 5fr;
 }
 
 .announceHead {
     grid-row-start: 1;
     grid-column-start: 2;
     justify-self: start;
-    align-self: center;
+    align-self: last baseline;
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
 .announcementItems {
@@ -174,22 +175,23 @@ button {
     align-self: center;
     padding: 25px;
     border-radius: 15px;
-    width: 350px;
+    width: 250px;
+    height: 300px;
     margin-right: 50px;
 }
 
 
 .aHead {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .aHead2 {
-    font-size: 18px;
+    font-size: 15px;
     padding-top: 10px;
 }
 
 .aText {
-    font-size: 15px;
+    font-size: 12px;
     color: rgb(92, 92, 92);
     border-bottom: solid;
     border-color: rgb(158, 158, 158);
@@ -203,36 +205,13 @@ button {
     border-style: none;
 }
 
-.projectHead {
-    border-style: solid; 
-    justify-self: start;
-    align-self: center;
-}
-
-.projectItems {
-    grid-row: 2/5;
-    grid-column-start: 1;
-    border-style: solid; 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-self: start;
-    gap: 30px;
-}
-
-.project {
-    border-style: solid; 
-    width: 350px;
-    height: 200px;
-    background-color: white;
-}
-
 .trendHead {
     grid-row-start: 3;
     grid-column-start: 2;
     justify-self: start;
-    align-self: center;
+    align-self:last baseline;
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
 .trendingItems {
@@ -246,15 +225,84 @@ button {
     padding: 25px;
     border-radius: 15px;
     background-color: white;
-    row-gap: 25px;
+    row-gap: 10px;
     column-gap: 10px;
-    width: 350px;
+    width: 250px;
+    height: 200px;
 }
 
 .trend p {
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .trend h5 {
-    font-size: 18px;
+    font-size: 15px;
 }
+
+.profileSmall2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.projectItems {
+    grid-row: 2/5;
+    grid-column-start: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    justify-self: start;
+    gap: 40px;
+    column-gap: 100px;
+    margin-left: 140px;
+}
+
+.project {
+    background-color: white;
+    border-radius: 15px;
+    border-left: solid;
+    border-color: orange;
+    border-width: 10px;
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 400px;
+    height: 200px;
+}
+
+
+.projectIcon1,
+.projectIcon2,
+.projectIcon3 {
+    height: 25px;
+    align-self: end;
+    margin-bottom: 5px;
+}
+
+.project h5 {
+    grid-column: span 5;
+    font-size: 20px;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.project p {
+    grid-column: span 5;
+    margin-left: 10px;
+    margin-right: 3px;
+    color: rgb(92, 92, 92);
+
+}
+
+.projectIcon1 {
+    grid-column-start: 2;
+}
+
+.projectHead {
+    justify-self: start;
+    align-self: last baseline;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-left: 140px;
+}
+
